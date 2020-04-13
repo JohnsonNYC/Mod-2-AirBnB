@@ -1,0 +1,18 @@
+<h1>Create New Locations for available places in your town!</h1>
+<%= form_for @location do |l|%>
+    <%=l.label :country%>
+    <%=l.text_field :country%> <br>
+    
+    <%=l.label :address%>
+    <%=l.text_field :address%> <br>
+
+    <%=l.label :city%>
+    <%=l.text_field :city %> <br> 
+
+    <%=l.label :zipcode%>
+    <%=l.text_field :zipcode%> <br> 
+
+    <%=l.label :listing_id%>
+    <%=l.number_field :listing_id%> <br> 
+
+<% end %>
