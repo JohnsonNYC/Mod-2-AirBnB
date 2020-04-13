@@ -1,4 +1,6 @@
+require 'bcrypt'
 class User < ApplicationRecord
+    include BCryptclea
     has_many :listings
     has_many :reservations
     has_many :messages, through: :listings
