@@ -1,0 +1,19 @@
+<h1>Edit your Listing</h1>
+<%= form_for @listing do |l|%>
+    <%= l.label :description %>
+    <%= l.text_field :description %> <br>
+    <%# FINISH THE REST  %>
+    <%= l.label :rental_type %>
+    <%= l.text_field :rental_type %> <br>
+
+    <%= l.label :ameneties %>
+    <%= l.text_field :ameneties %> <br>
+
+    <%= l.label :user_id %>
+    <%= l.text_field :user_id %> <br>
+
+    <%= l.label :message_id %>
+    <%= l.text_field :message_id %> <br>
+
+    <%= l.submit%>
+<% end %>
