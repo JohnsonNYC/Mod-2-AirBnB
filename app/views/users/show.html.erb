@@ -1,0 +1,9 @@
+<h1>Welcome to <%=@user.first_name%>'s page</h1>
+
+<h2>Listings</h2>
+
+<% @user.listings.each do |post|%>
+    <%= post.description %> <br>
+    <%= post.rental_type %> <br>
+    <%= post.ameneties%> <br>
+<% end %>
