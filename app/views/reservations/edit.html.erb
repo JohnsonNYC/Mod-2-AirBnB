@@ -1,0 +1,27 @@
+<h1>Reservation edit form </h1>
+<%= form_for @reservation do |f|%>
+    <%=f.label :guest_amount%><br>
+    <%=f.number_field :guest_amount %><br>
+
+    <%=f.label :check_in%><br>
+    <%=f.date_field  :check_in %><br>
+
+    <%=f.label :check_out%><br>
+    <%=f.date_field  :check_out %><br>
+ <%=f.submit%>
+    <%end%>
+
+
+
+
+    
+   <!--f.label :availability%><br>
+    f.number_field :availability %><br>
+
+    f.label :total_price%><br>
+    f.number_field :total_price %><br>
+
+    f.label :confirmation_number%><br>
+    f.number_field :confirmation_number %><br> -->
+
+  
