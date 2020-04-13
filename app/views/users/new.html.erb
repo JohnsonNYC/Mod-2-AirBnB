@@ -1,4 +1,9 @@
 <h1> Create your account </h1>
+<% if flash[:errors]%>
+    <% flash[:errors].each do |message| %>
+        <%= message%>
+    <% end %>
+<% end %>
 
 <%= form_for @user do |u|%>
     <%= u.label :first_name %>
